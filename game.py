@@ -82,9 +82,9 @@ settings_button_rect = pygame.Rect(settings_button_pos[0], settings_button_pos[1
 credits_button_rect = pygame.Rect(credits_button_pos[0], credits_button_pos[1], BUTTON_WIDTH, BUTTON_HEIGHT)
 
 # Load button images
-play_button_img = pygame.image.load("play_button.png")
-settings_button_img = pygame.image.load("settings_button.png")
-credits_button_img = pygame.image.load("credits_button.png")
+play_button_img = pygame.image.load(os.path.join(image_dir, "play.png"))
+settings_button_img = pygame.image.load(os.path.join(image_dir, "settings.png"))
+credits_button_img = pygame.image.load(os.path.join(image_dir, "credits.png"))
 
 # Start the main menu loop
 main_menu()
